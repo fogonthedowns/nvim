@@ -1,4 +1,4 @@
-# Simple instructions to install Microsoft Language Server, gopls and ctags.
+# Instructions to install Microsoft Language Server, gopls and ctags
 
 Language Server Protocol [(LSP)](https://microsoft.github.io/language-server-protocol/).
 

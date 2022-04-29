@@ -40,7 +40,7 @@ require'lspconfig'.gopls.setup{}
 ```
 
 
-Ensure `init.vim` requires plugins. Open a nvim:
+Ensure `init.vim` requires plugins. Open a nvim shell:
 
 ```
 :PackerUpdate

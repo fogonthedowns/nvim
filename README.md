@@ -33,7 +33,7 @@ use 'neovim/nvim-lspconfig'
 
 [Install LSP](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
-e.g. Google's lsp server for golang:
+e.g. Google's LSP for golang:
 
 ```
 require'lspconfig'.gopls.setup{}

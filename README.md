@@ -4,7 +4,7 @@ This depends on [neovim](https://neovim.io/)
 
 ## TLDR
 
-Pull this into ~/.config. Clone `packer.nvim` and install `universal-ctags`. Open a neovim shell and run `:PackerUpdate`
+Clone this repo into `~/.config`. Clone `packer.nvim` and install `universal-ctags`. Open a neovim shell and run `:PackerUpdate`
 
 ## Setup
 

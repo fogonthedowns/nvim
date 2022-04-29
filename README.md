@@ -1,3 +1,7 @@
+# Simple instructions to install Microsoft Language Server, gopls and ctags.
+
+Language Server Protocol [(LSP)](https://microsoft.github.io/language-server-protocol/).
+
 ## Requirements
 
 This depends on [neovim](https://neovim.io/)

@@ -14,6 +14,7 @@ brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 ```
 
 [Install nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+
 [Install LSP](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
 Ensure init.vim requires plugins. Open a nvim:

@@ -8,8 +8,8 @@ This depends on [neovim](https://neovim.io/)
 
 ## TLDR
 
-Clone this repo into `~/.config`. Clone `packer.nvim` and install `universal-ctags`. Open a neovim shell and run `:PackerUpdate`
-Then uncomment line 7 in lua/plugins.lua
+Clone this repo into `~/.config`. Clone `packer.nvim` and install `universal-ctags`.
+Then comment line 7 in lua/plugins.lua. Open a neovim shell and run `:PackerUpdate`. Then remove comment on line 7.
 
 ## Setup
 

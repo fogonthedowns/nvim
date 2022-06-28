@@ -9,6 +9,7 @@ This depends on [neovim](https://neovim.io/)
 ## TLDR
 
 Clone this repo into `~/.config`. Clone `packer.nvim` and install `universal-ctags`. Open a neovim shell and run `:PackerUpdate`
+Then uncomment line 7 in lua/plugins.lua
 
 ## Setup
 

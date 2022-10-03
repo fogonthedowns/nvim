@@ -7,9 +7,15 @@ vim.cmd [[packadd packer.nvim]]
 require'lspconfig'.gopls.setup{} -- gopls language server (LSP) https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#gopls
 
 return require('packer').startup(function()
-  -- to install package. Import library with use ''. Open nvim and enter :PackerUpdate
+  -- INSTALL New PACKAGES:
+  -- To install new pacakges, find the github package installation command something usually equivalent to
+  -- Plug 'sebdah/vim-delve'
+  -- Since plug is the most commnon, you will usually see that listed first. you are not using plugs replace with: 
+  -- use 'sebdah/vim-delve'
+  -- Finally, to install package. First Open nvim Then enter :PackerUpdate
   use 'wbthomason/packer.nvim' -- Package manager
   use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
   use 'ludovicchabant/vim-gutentags' -- cTags
+  use 'sebdah/vim-delve' -- Golang debugger for neovim, requires github.com/go-delve/delve (installed via go)
 end)
 

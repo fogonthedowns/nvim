@@ -51,3 +51,9 @@ Verify LSP client install
 ```
 :LspInfo
 ```
+
+## Problems
+
+```
+brew reinstall neovim
+```

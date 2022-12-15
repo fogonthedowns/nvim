@@ -40,6 +40,13 @@ e.g. Google's LSP for golang:
 require'lspconfig'.gopls.setup{}
 ```
 
+updating gopls:
+```
+gopls version
+which gopls
+GO111MODULE=on go install golang.org/x/tools/gopls@latest
+```
+
 
 Ensure `init.vim` requires plugins. Open a nvim shell:
 

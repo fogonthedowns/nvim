@@ -8,10 +8,25 @@ This depends on [neovim](https://neovim.io/)
 
 ## TLDR
 
-Clone this repo into `~/.config`. Clone `packer.nvim` and install `universal-ctags`.
+Clone this repo into `~/.config`. Clone `packer.nvim` and install `universal-ctags`. Next `brew install fzf`.
 Then comment line 7 in lua/plugins.lua. Open a neovim shell and run `:PackerUpdate`. Then remove comment on line 7.
 
 ## Setup
+
+[Install Homebrew](https://brew.sh)
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+[Install ack](https://beyondgrep.com/install/)
+```
+brew install ack
+```
+
+[Install fzf](https://github.com/junegunn/fzf)
+```
+brew install fzf
+```
 
 [Install Packer](https://github.com/wbthomason/packer.nvim)
 

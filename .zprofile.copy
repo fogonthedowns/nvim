@@ -1,0 +1,6 @@
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+alias vim=nvim
+export GOPATH=$HOME/go
+export ACKRC=/Users/justinzollars/.config/.ackrc
+export GPG_TTY=$(tty)

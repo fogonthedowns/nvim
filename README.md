@@ -13,6 +13,21 @@ Then comment line 7 in lua/plugins.lua. Open a neovim shell and run `:PackerUpda
 
 ## Setup
 
+[Install Homebrew](https://brew.sh)
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+[Install ack](https://beyondgrep.com/install/)
+```
+brew install ack
+```
+
+[Install fzf](https://github.com/junegunn/fzf)
+```
+brew install fzf
+```
+
 [Install Packer](https://github.com/wbthomason/packer.nvim)
 
 ```

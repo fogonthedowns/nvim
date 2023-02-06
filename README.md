@@ -18,6 +18,11 @@ Then comment line 7 in lua/plugins.lua. Open a neovim shell and run `:PackerUpda
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+[Install oh-my-zsh](https://ohmyz.sh)
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 [Install ack](https://beyondgrep.com/install/)
 ```
 brew install ack

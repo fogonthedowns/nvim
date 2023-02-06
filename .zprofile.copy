@@ -2,5 +2,5 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 alias vim=nvim
 export GOPATH=$HOME/go
-export ACKRC=/Users/justinzollars/.config/.ackrc
+export ACKRC=/Users/justinzollars/.config/nvim/.ackrc
 export GPG_TTY=$(tty)

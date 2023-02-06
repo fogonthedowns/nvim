@@ -17,5 +17,7 @@ return require('packer').startup(function()
   use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
   use 'ludovicchabant/vim-gutentags' -- cTags
   use 'sebdah/vim-delve' -- Golang debugger for neovim, requires github.com/go-delve/delve (installed via go)
+  use { 'junegunn/fzf', run = ":call fzf#install()" }
+  use { 'junegunn/fzf.vim' }
 end)
 

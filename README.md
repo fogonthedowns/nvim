@@ -52,6 +52,12 @@ brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 use 'neovim/nvim-lspconfig'
 ```
 
+[Install node.js](https://nodejs.org/en/)
+
+```
+brew install node.js
+```
+
 [Install LSP](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
 e.g. Google's LSP for golang:
@@ -79,6 +85,12 @@ Verify LSP client install
 :LspInfo
 ```
 
+Copilot install
+```
+:Copilot setup
+:Copilot enable
+
+```
 ## Problems
 
 ```

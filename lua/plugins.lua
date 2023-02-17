@@ -19,5 +19,6 @@ return require('packer').startup(function()
   use 'sebdah/vim-delve' -- Golang debugger for neovim, requires github.com/go-delve/delve (installed via go)
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use { 'junegunn/fzf.vim' }
+  use { 'github/copilot.vim' }
 end)
 

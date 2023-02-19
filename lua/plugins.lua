@@ -6,6 +6,7 @@ vim.cmd [[packadd packer.nvim]]
 -- Prior to installation (opening nvim and running ::PackerUpdate) comment the line below. Then Uncomment.
 require'lspconfig'.gopls.setup{} -- gopls language server (LSP) https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#gopls
 
+
 return require('packer').startup(function()
   -- INSTALL New PACKAGES:
   -- To install new pacakges, find the github package installation command something usually equivalent to
@@ -20,5 +21,17 @@ return require('packer').startup(function()
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use { 'junegunn/fzf.vim' }
   use { 'github/copilot.vim' }
+  use 'folke/lsp-colors.nvim' -- https://github.com/folke/lsp-colors.nvim
+  use { -- https://github.com/folke/trouble.nvim
+    "folke/trouble.nvim",
+    requires = "nvim-tree/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
 end)
 

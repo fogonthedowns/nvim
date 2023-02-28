@@ -1,4 +1,4 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
+-- file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
@@ -13,15 +13,7 @@ require'lspconfig'.gopls.setup{ -- gopls language server (LSP) https://github.co
   vim.keymap.set("n", "gi", vim.lsp.buf.implementation, {buffer=0})
   vim.keymap.set("n", "<leader>df", vim.diagnostic.goto_next, {buffer=0})
 
-  -- vim.lsp.set_log_level("debug")
-  -- vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-  --  vim.lsp.diagnostic.on_publish_diagnostics, {
-  --    virtual_text = false,
-  --    signs = true,
-  --    underline = true,
-  --    update_in_insert = false,
-  --  }
-  -- )
+
 end
 }
 -- connect to server
@@ -40,6 +32,21 @@ return require('packer').startup(function()
   use 'sebdah/vim-delve' -- Golang debugger for neovim, requires github.com/go-delve/delve (installed via go)
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use { 'junegunn/fzf.vim' }
+
+
+  -- Fuzzy Finder (files, lsp, etc)
+use {
+  'nvim-telescope/telescope.nvim', tag = '0.1.1',
+-- or                            , branch = '0.1.x',
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
+
+  local builtin = require('telescope.builtin')
+  vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+  vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+  vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+  vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+  vim.keymap.set('n', '<leader>gr', builtin.lsp_references, {})
   -- use 'folke/lsp-colors.nvim' -- https://github.com/folke/lsp-colors.nvim
   use { -- https://github.com/folke/trouble.nvim
     "folke/trouble.nvim",

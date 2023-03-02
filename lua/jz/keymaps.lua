@@ -9,6 +9,9 @@ keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current slpit window
+--- note ctrl H, L to move horizontally between split windows
+--- note ctrl J, K to move vertically between split windows
+
 
 keymap.set("n", "<leader>+", "<C-a>") -- increment number under cursor
 keymap.set("n", "<leader>-", "<C-x>") -- decrement number under cursor

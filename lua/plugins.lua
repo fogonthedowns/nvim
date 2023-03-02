@@ -7,11 +7,6 @@ vim.g.mapleader = "\\" -- set leader key to backslash
 require'lspconfig'.gopls.setup{ -- gopls language server (LSP) https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#gopls
   -- cmd = {"gopls", "-logfile=/tmp/gopls.log", "-mode=stdio", "-remote=auto", "-rpc.trace", "-debug=rpctrace"}, -- for debugging
   on_attach = function()
-  vim.keymap.set("n", "K", vim.lsp.buf.hover, {buffer=0})
-  vim.keymap.set("n", "gd", vim.lsp.buf.definition, {buffer=0})
-  vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, {buffer=0})
-  vim.keymap.set("n", "gi", vim.lsp.buf.implementation, {buffer=0})
-  vim.keymap.set("n", "<leader>df", vim.diagnostic.goto_next, {buffer=0})
 end
 }
 -- connect to server
@@ -30,29 +25,21 @@ return require('packer').startup(function()
   use 'sebdah/vim-delve' -- Golang debugger for neovim, requires github.com/go-delve/delve (installed via go)
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use { 'junegunn/fzf.vim' }
-
-
-  -- Fuzzy Finder (files, lsp, etc)
-use {
-  'nvim-telescope/telescope.nvim', tag = '0.1.1',
--- or                            , branch = '0.1.x',
-  requires = { {'nvim-lua/plenary.nvim'} }
-}
-
-  -- Colorschemes
-  use "folke/tokyonight.nvim"
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
+  use("nvim-lualine/lualine.nvim") -- statusline
+  use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = { {'nvim-lua/plenary.nvim'} }}  -- Fuzzy finder
+  use "folke/tokyonight.nvim" -- Colorschemes
   use "lunarvim/darkplus.nvim"
 
-  local builtin = require('telescope.builtin')
-  vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-  vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-  vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-  vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-  vim.keymap.set('n', '<leader>gr', builtin.lsp_references, {})
-  vim.keymap.set('n', '<leader>ds', builtin.lsp_document_symbols, {})
-  vim.keymap.set('n', '<leader>ws', builtin.lsp_dynamic_workspace_symbols, {})
-  -- use 'folke/lsp-colors.nvim' -- https://github.com/folke/lsp-colors.nvim
+  use("christoomey/vim-tmux-navigator") -- Tmux navigation
+  use("szw/vim-maximizer") -- Maximize window
+
+  use("tpope/vim-surround") -- Surround text objects
+  use("vim-scripts/ReplaceWithRegister") -- Replace with register ys w "   ds "   cs "'
+
+  use("nvim-tree/nvim-tree.lua")  -- File explorer
+
+  use("numToStr/Comment.nvim") -- Commenting
+
   use { -- https://github.com/folke/trouble.nvim
     "folke/trouble.nvim",
     requires = "nvim-tree/nvim-web-devicons",

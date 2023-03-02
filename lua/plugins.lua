@@ -45,6 +45,9 @@ return require('packer').startup(function()
   use("saadparwaiz1/cmp_luasnip") -- Snippets
   use("rafamadriz/friendly-snippets") -- Snippets
 
+  -- install ack
+  use("mileszs/ack.vim") -- Ack
+
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {

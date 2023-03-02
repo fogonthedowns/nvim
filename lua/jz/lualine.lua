@@ -3,5 +3,11 @@ if not status then
   return
 end
 
-lualine.setup({})
+lualine.setup {
+  sections = {
+    lualine_a = {
+      { 'filename', file_status = true, path = 1, shorting_target = 40 },
+    },
+  },
+}
 

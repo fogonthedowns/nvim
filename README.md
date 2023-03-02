@@ -78,8 +78,6 @@ gopls version
 which gopls
 GO111MODULE=on go install golang.org/x/tools/gopls@latest
 ```
-
-
 Ensure `init.vim` requires plugins. Open a nvim shell:
 
 ```
@@ -95,6 +93,13 @@ Copilot install
 ```
 :Copilot setup
 :Copilot enable
+```
+
+PowerLevel10k theme:
+
+[ZSH Theme](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 ```
 ## Problems

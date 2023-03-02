@@ -2,7 +2,6 @@
 
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
-vim.g.mapleader = "\\" -- set leader key to backslash
 -- Prior to installation (opening nvim and running ::PackerUpdate) comment the line below. Then Uncomment.
 require'lspconfig'.gopls.setup{ -- gopls language server (LSP) https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#gopls
   -- cmd = {"gopls", "-logfile=/tmp/gopls.log", "-mode=stdio", "-remote=auto", "-rpc.trace", "-debug=rpctrace"}, -- for debugging

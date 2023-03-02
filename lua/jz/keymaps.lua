@@ -20,20 +20,20 @@ keymap.set("n", "<leader>tp", ":tabprevious<CR>") -- go to previous tab
 
 keymap.set("n", "<leader>sm",":MaximizerToggle<CR>") -- toggle maximizer
 
-keymap.set("n", "K", vim.lsp.buf.hover, {buffer=0})
-keymap.set("n", "gd", vim.lsp.buf.definition, {buffer=0})
-keymap.set("n", "gt", vim.lsp.buf.type_definition, {buffer=0})
-keymap.set("n", "gi", vim.lsp.buf.implementation, {buffer=0})
-keymap.set("n", "<leader>df", vim.diagnostic.goto_next, {buffer=0})
+-- keymap.set("n", "K", vim.lsp.buf.hover, {buffer=0})
+-- keymap.set("n", "gd", vim.lsp.buf.definition, {buffer=0})
+-- keymap.set("n", "gt", vim.lsp.buf.type_definition, {buffer=0})
+-- keymap.set("n", "gi", vim.lsp.buf.implementation, {buffer=0})
+-- keymap.set("n", "<leader>df", vim.diagnostic.goto_next, {buffer=0})
 
 
 keymap.set('n', '<leader>ff', builtin.find_files, {})
 keymap.set('n', '<leader>fg', builtin.live_grep, {})
 keymap.set('n', '<leader>fb', builtin.buffers, {})
 keymap.set('n', '<leader>fh', builtin.help_tags, {})
-keymap.set('n', '<leader>gr', builtin.lsp_references, {})
-keymap.set('n', '<leader>ds', builtin.lsp_document_symbols, {})
-keymap.set('n', '<leader>ws', builtin.lsp_dynamic_workspace_symbols, {})
+-- keymap.set('n', '<leader>gr', builtin.lsp_references, {})
+-- keymap.set('n', '<leader>ds', builtin.lsp_document_symbols, {})
+-- keymap.set('n', '<leader>ws', builtin.lsp_dynamic_workspace_symbols, {})
 
 -- nvim-tree
 keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')

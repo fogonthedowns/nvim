@@ -111,6 +111,21 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 
 Then add zsh-syntax-highlighting to plugins of .zshrc
 
+
+Code Complexity Tools
+[complexity](https://github.com/thoughtbot/complexity)
+```
+brew tap thoughtbot/formulae
+brew install complexity
+complexity --ignore testdata| sort -n --reverse | head -n 20
+```
+
+[gocognit](https://github.com/uudashr/gocognit)
+```
+go install github.com/uudashr/gocognit/cmd/gocognit@latest
+gocognit . |head -n 20
+```
+
 ## Problems
 
 ```

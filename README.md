@@ -33,6 +33,12 @@ brew install ack
 brew install fzf
 ```
 
+[Install Fonts]()
+```
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font --cask
+```
+
 [Install Packer](https://github.com/wbthomason/packer.nvim)
 
 ```

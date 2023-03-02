@@ -36,9 +36,18 @@ return require('packer').startup(function()
   use("tpope/vim-surround") -- Surround text objects
   use("vim-scripts/ReplaceWithRegister") -- Replace with register ys w "   ds "   cs "'
 
-  use("nvim-tree/nvim-tree.lua")  -- File explorer
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
 
   use("numToStr/Comment.nvim") -- Commenting
+
+
+  use("nvim-lualine/lualine.nvim") -- statusline
 
   use { -- https://github.com/folke/trouble.nvim
     "folke/trouble.nvim",

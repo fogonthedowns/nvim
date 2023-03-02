@@ -34,3 +34,6 @@ keymap.set('n', '<leader>fh', builtin.help_tags, {})
 keymap.set('n', '<leader>gr', builtin.lsp_references, {})
 keymap.set('n', '<leader>ds', builtin.lsp_document_symbols, {})
 keymap.set('n', '<leader>ws', builtin.lsp_dynamic_workspace_symbols, {})
+
+-- nvim-tree
+keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')

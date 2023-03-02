@@ -2,13 +2,12 @@
 
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
+
 -- Prior to installation (opening nvim and running ::PackerUpdate) comment the line below. Then Uncomment.
-require'lspconfig'.gopls.setup{ -- gopls language server (LSP) https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#gopls
-  -- cmd = {"gopls", "-logfile=/tmp/gopls.log", "-mode=stdio", "-remote=auto", "-rpc.trace", "-debug=rpctrace"}, -- for debugging
-  on_attach = function()
-end
-}
--- connect to server
+require'lspconfig'.gopls.setup{-- gopls language server (LSP) https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#gopls
+    on_attach = function()
+    end
+    }
 
 return require('packer').startup(function()
   -- INSTALL New PACKAGES:
@@ -34,6 +33,17 @@ return require('packer').startup(function()
 
   use("tpope/vim-surround") -- Surround text objects
   use("vim-scripts/ReplaceWithRegister") -- Replace with register ys w "   ds "   cs "'
+
+  -- autocomplete
+  use("hrsh7th/nvim-cmp") -- Autocomplete
+  use("hrsh7th/cmp-buffer") -- Autocomplete
+  use("hrsh7th/cmp-path") -- Autocomplete
+  use("hrsh7th/cmp-nvim-lsp") -- Autocomplete LSP
+
+  -- snippets
+  use("L3MON4D3/LuaSnip") -- Snippets
+  use("saadparwaiz1/cmp_luasnip") -- Snippets
+  use("rafamadriz/friendly-snippets") -- Snippets
 
   use {
     'nvim-tree/nvim-tree.lua',

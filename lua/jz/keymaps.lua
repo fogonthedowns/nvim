@@ -26,7 +26,7 @@ keymap.set("n", "<leader>sm",":MaximizerToggle<CR>") -- toggle maximizer
 keymap.set("n", "K", vim.lsp.buf.hover, {buffer=0})
 keymap.set("n", "gd", vim.lsp.buf.definition, {buffer=0})
 keymap.set("n", "gt", vim.lsp.buf.type_definition, {buffer=0})
-keymap.set("n", "gi", vim.lsp.buf.implementation, {buffer=0})
+keymap.set("n", "ga", vim.lsp.buf.implementation, {buffer=0})
 keymap.set("n", "<leader>df", vim.diagnostic.goto_next, {buffer=0})
 
 

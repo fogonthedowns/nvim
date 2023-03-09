@@ -9,4 +9,5 @@ require('jz.nvim-tree')
 require('jz.lualine')
 require('jz.nvim-cmp')
 require("jz.lsp_config")
+require("jz.dap")
 

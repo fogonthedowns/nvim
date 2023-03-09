@@ -100,7 +100,7 @@ PowerLevel10k theme:
 [ZSH Theme](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
+Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
 ```
 
 [ZSH Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)

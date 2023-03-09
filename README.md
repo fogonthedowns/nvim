@@ -134,6 +134,12 @@ gocognit . |head -n 20
 brew install jq
 ```
 
+[dlv]()
+```
+brew install dlv
+dlv version
+1.20.1
+```
 
 ## Problems
 

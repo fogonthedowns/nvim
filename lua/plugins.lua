@@ -72,4 +72,10 @@ return require('packer').startup(function()
       }
     end
   }
+
+  -- dap
+  use {"mfussenegger/nvim-dap"} -- DAP
+  use {"rcarriga/nvim-dap-ui"} -- DAP UI
+  use {"leoluz/nvim-dap-go"} -- DAP Go
+
 end)

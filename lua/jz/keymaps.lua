@@ -26,7 +26,7 @@ keymap.set("n", "<leader>sm",":MaximizerToggle<CR>") -- toggle maximizer
 keymap.set("n", "K", vim.lsp.buf.hover, {buffer=0})
 keymap.set("n", "gd", vim.lsp.buf.definition, {buffer=0})
 keymap.set("n", "gt", vim.lsp.buf.type_definition, {buffer=0})
-keymap.set("n", "gi", vim.lsp.buf.implementation, {buffer=0})
+keymap.set("n", "ga", vim.lsp.buf.implementation, {buffer=0})
 keymap.set("n", "<leader>df", vim.diagnostic.goto_next, {buffer=0})
 
 
@@ -40,3 +40,20 @@ keymap.set('n', '<leader>ws', builtin.lsp_dynamic_workspace_symbols, {})
 
 -- nvim-tree
 keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
+
+-- dap  
+keymap.set('n', '<leader>b', ':lua require"dap".toggle_breakpoint()<CR>')
+keymap.set('n', '<leader>c', ':lua require"dap".continue()<CR>')
+keymap.set('n', '<leader>s', ':lua require"dap".step_over()<CR>')
+keymap.set('n', '<leader>i', ':lua require"dap".step_into()<CR>')
+keymap.set('n', '<leader>o', ':lua require"dap".step_out()<CR>')
+keymap.set('n', '<leader>dr', ':lua require"dap".repl.open()<CR>')
+keymap.set('n', '<leader>B', ':lua require"dap".set_breakpoint(vim.fn.input("Breakpoint condition: "))<CR>')
+keymap.set('n', '<leader>lp', ':lua require"dap".set_breakpoint(nil, nil, vim.fn.input("Log point message: "))<CR>')
+keymap.set('n', '<leader>dr', ':lua require"dap".repl.open()<CR>')
+
+-- dap-go
+keymap.set('n', '<leader>dl', ':lua require"dap-go".debug_test()<CR>')
+
+-- dap-ui
+keymap.set('n', '<leader>ui', ':lua require"dapui".toggle()<CR>')

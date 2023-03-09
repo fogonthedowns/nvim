@@ -38,6 +38,8 @@ brew install fzf
 brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font --cask
 ```
+note - Fonts are required to display icons for IDE. configure Fonts with iTerm2. (Settings>Profile>Text]
+
 
 [Install Packer](https://github.com/wbthomason/packer.nvim)
 
@@ -124,6 +126,19 @@ complexity --ignore testdata| sort -n --reverse | head -n 20
 ```
 go install github.com/uudashr/gocognit/cmd/gocognit@latest
 gocognit . |head -n 20
+```
+
+
+[jq](https://stedolan.github.io/jq/)
+```
+brew install jq
+```
+
+[dlv]()
+```
+brew install dlv
+dlv version
+1.20.1
 ```
 
 ## Problems

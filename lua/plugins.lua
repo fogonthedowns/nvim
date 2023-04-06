@@ -78,4 +78,7 @@ return require('packer').startup(function()
   use {"rcarriga/nvim-dap-ui"} -- DAP UI
   use {"leoluz/nvim-dap-go"} -- DAP Go
 
+
+  use {'zivyangll/git-blame.vim', requires = {'nvim-lua/plenary.nvim'}} -- Git blame
+
 end)

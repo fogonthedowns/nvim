@@ -1,6 +1,6 @@
 require('plugins')
 require('jz.comment')
-require('jz.copilot')
+--require('jz.copilot')
 require('jz.lsp')
 require('jz.colorscheme')
 require('jz.options')

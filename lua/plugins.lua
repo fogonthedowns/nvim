@@ -16,7 +16,7 @@ return require('packer').startup(function()
   -- Since plug is the most commnon, you will usually see that listed first. you are not using plugs replace with: 
   -- use 'sebdah/vim-delve'
   -- Finally, to install package. First Open nvim Then enter :PackerUpdate
-  use { 'github/copilot.vim' }
+  -- use { 'github/copilot.vim' }
   use 'wbthomason/packer.nvim' -- Package manager
   use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
   use 'ludovicchabant/vim-gutentags' -- cTags
@@ -46,7 +46,7 @@ return require('packer').startup(function()
   use("rafamadriz/friendly-snippets") -- Snippets
 
   -- install ack
-  use("mileszs/ack.vim") -- Ack
+  -- use("mileszs/ack.vim") -- Ack
 
   use {
     'nvim-tree/nvim-tree.lua',

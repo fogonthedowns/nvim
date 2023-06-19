@@ -1,1 +1,1 @@
-vim.g.copilot_filetypes = { xml = false, markdown = false }
+--vim.g.copilot_filetypes = { xml = false, markdown = false }

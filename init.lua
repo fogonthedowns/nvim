@@ -1,6 +1,5 @@
 require('plugins')
 require('jz.comment')
-require('jz.copilot')
 require('jz.lsp')
 require('jz.colorscheme')
 require('jz.options')
@@ -11,6 +10,8 @@ require('jz.nvim-cmp')
 require("jz.lsp_config")
 require("jz.dap")
 require("jz.telescope")
+require("jz.html")
+-- require("jz.copilot")
 
 vim.o.encoding = 'utf-8'
 
@@ -37,4 +38,6 @@ vim.o.smartcase = true
 
 -- Clear the search register
 vim.cmd('let @/ = ""')
+
+vim.cmd([[autocmd BufWritePre *.html lua vim.lsp.buf.formatting()]])
 

@@ -61,7 +61,7 @@ return require('packer').startup(function()
   use("rafamadriz/friendly-snippets") -- Snippets
 
   -- install ack
-  use("mileszs/ack.vim") -- Ack
+  -- use("mileszs/ack.vim") -- Ack
 
   use {
     'nvim-tree/nvim-tree.lua',

@@ -16,9 +16,24 @@ return require('packer').startup(function()
   -- Since plug is the most commnon, you will usually see that listed first. you are not using plugs replace with: 
   -- use 'sebdah/vim-delve'
   -- Finally, to install package. First Open nvim Then enter :PackerUpdate
-  use { 'github/copilot.vim' }
+  -- use { 'github/copilot.vim' }
   use 'wbthomason/packer.nvim' -- Package manager
   use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
+  use({
+    "glepnir/lspsaga.nvim",
+    opt = true,
+    branch = "main",
+    event = "LspAttach",
+    config = function()
+        require("lspsaga").setup({})
+    end,
+    requires = {
+        {"nvim-tree/nvim-web-devicons"},
+        --Please make sure you install markdown and markdown_inline parser
+        {"nvim-treesitter/nvim-treesitter"}
+    }
+  })
+
   use 'ludovicchabant/vim-gutentags' -- cTags
   use 'sebdah/vim-delve' -- Golang debugger for neovim, requires github.com/go-delve/delve (installed via go)
   use { 'junegunn/fzf', run = ":call fzf#install()" }
@@ -80,5 +95,11 @@ return require('packer').startup(function()
 
 
   use {'zivyangll/git-blame.vim', requires = {'nvim-lua/plenary.nvim'}} -- Git blame
+-- install without yarn or npm
+use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+})
 
+use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 end)

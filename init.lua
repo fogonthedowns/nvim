@@ -11,7 +11,7 @@ require('jz.nvim-cmp')
 require("jz.lsp_config")
 require("jz.dap")
 require("jz.telescope")
-require("jz.html")
+-- require("jz.html")
 
 vim.o.encoding = 'utf-8'
 

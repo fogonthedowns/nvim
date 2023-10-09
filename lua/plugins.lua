@@ -9,6 +9,9 @@ require'lspconfig'.gopls.setup{-- gopls language server (LSP) https://github.com
     end
     }
 
+-- Prior to uncommenting this, run npm i -g pyright
+require'lspconfig'.pyright.setup{}
+
 return require('packer').startup(function()
   -- INSTALL New PACKAGES:
   -- To install new pacakges, find the github package installation command something usually equivalent to

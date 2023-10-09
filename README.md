@@ -157,6 +157,13 @@ npm i -g pyright
 require'lspconfig'.pyright.setup{}
 ```
 
+[[yamlls]]()
+```
+brew install yarn
+yarn add yaml-language-server@latest
+npm i -g yaml-language-server@latest
+```
+
 ## Problems
 
 ```

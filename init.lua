@@ -12,6 +12,7 @@ require("jz.lsp_config")
 require("jz.dap")
 require("jz.telescope")
 require("jz.html")
+require("jz.yamlls")
 
 vim.o.encoding = 'utf-8'
 

@@ -8,7 +8,7 @@ require('lspconfig')['yamlls'].setup {
         ["https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.0/deployment.json"] = "/*-deployment.yaml",
         ["https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.0/service.json"] = "/*-service.yaml",
         ["https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.0/configmap.json"] = "/*-configmap.yaml",
-        ["https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/schemas/v3.0/schema.yaml"] = "/*-openapi.yaml"
+        ["https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/schemas/v3.0/schema.yaml"] = "/*-openapi.yamlL:"
       }
     }
   }
